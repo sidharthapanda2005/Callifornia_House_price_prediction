@@ -2,7 +2,7 @@ import uvicorn
 from fastapi import FastAPI
 import pickle
 app = FastAPI()
-pickle_in = open("/Users/shridharmankar/Complete Data Science Basics To Advanced/regressor.pkl","rb")
+pickle_in = open("/path/regressor.pkl","rb")
 model=pickle.load(pickle_in)
 
 @app.get('/')
